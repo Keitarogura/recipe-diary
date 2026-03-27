@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recipe Diary - プライバシーポリシー</title>
-  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <!-- <title>Recipe Diary - プライバシーポリシー</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" /> -->
   <!-- reset.css ress -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <!-- Google Fonts (Noto Sans JP,Philosopher,Kaku Gothic Antique) -->
@@ -16,20 +16,21 @@
     rel="stylesheet" />
   <!-- original css -->
   <link rel="stylesheet" href="./css/style.css" />
+<?php wp_head(); ?>  
 </head>
 
 <body>
   <header>
     <div class="header-inner wrapper">
       <p class="logo">
-        <a href="./index.html"><img src="./img/logo.svg" alt="Recipe Diary" /></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="<?php bloginfo('name'); ?>" /></a>
       </p>
       <nav>
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./recipe-list.html">Recipe</a></li>
-          <li><a href="./news.html">News</a></li>
+          <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
+          <li><a href="<?php echo esc_url(home_url('/')); ?>about/">About</a></li>
+          <li><a href="<?php echo esc_url(home_url('/')); ?>recipe/">Recipe</a></li>
+          <li><a href="<?php echo esc_url(home_url('/')); ?>news/">News</a></li>
         </ul>
       </nav>
       <button class="ham-btn" id="js-ham-btn">
