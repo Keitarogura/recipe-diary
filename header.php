@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Diary - プライバシーポリシー</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <!-- reset.css ress -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <!-- Google Fonts (Noto Sans JP,Philosopher,Kaku Gothic Antique) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Kaku+Gothic+Antique&display=swap"
+    rel="stylesheet" />
+  <!-- original css -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-inner wrapper">
+      <p class="logo">
+        <a href="./index.html"><img src="./img/logo.svg" alt="Recipe Diary" /></a>
+      </p>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./recipe-list.html">Recipe</a></li>
+          <li><a href="./news.html">News</a></li>
+        </ul>
+      </nav>
+      <button class="ham-btn" id="js-ham-btn">
+        <span class="ham-line"><span class="visually-hidden">メニューを開く</span></span>
+      </button>
+    </div>
+  </header>
