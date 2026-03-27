@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
 /* common
-------------------------- */
+Theme Name:RECIPE DIARY
+Description:RECIPE DIARYのテンプレート
+Version:1.0
+*/
+
 html,
 body {
   scroll-behavior: smooth;
