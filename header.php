@@ -15,11 +15,12 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Kaku+Gothic+Antique&display=swap"
     rel="stylesheet" />
   <!-- original css -->
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
 <?php wp_head(); ?>  
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <header>
     <div class="header-inner wrapper">
       <p class="logo">
@@ -28,9 +29,9 @@
       <nav>
         <ul>
           <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
-          <li><a href="<?php echo esc_url(home_url('/')); ?>about/">About</a></li>
-          <li><a href="<?php echo esc_url(home_url('/')); ?>recipe/">Recipe</a></li>
-          <li><a href="<?php echo esc_url(home_url('/')); ?>news/">News</a></li>
+          <li><a href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>
+          <li><a href="<?php echo esc_url(home_url('/recipe/')); ?>">Recipe</a></li>
+          <li><a href="<?php echo esc_url(home_url('/news/')); ?>">News</a></li>
         </ul>
       </nav>
       <button class="ham-btn" id="js-ham-btn">
