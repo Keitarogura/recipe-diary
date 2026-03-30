@@ -87,7 +87,10 @@ header {
 
 nav {
   position: fixed;
-  inset: 0 -100% 0 100%;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  left: 100%;
   background-color: color-mix(in srgb, #ffffff, transparent 15%);
   transition: all 0.3s ease-in-out;
 }
@@ -221,6 +224,22 @@ footer {
   font-size: 0.8rem;
   color: #666666;
   line-height: 1.5;
+}
+
+/* olタグを横並びにする設定を追加 */
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; /* リストのポッチを消す */
+  padding: 0;
+  margin: 0;
+}
+
+/* 各項目の間に区切り文字を入れる設定（任意） */
+.breadcrumbs ol li:not(:last-child)::after {
+  content: '>';
+  margin-inline: 0.5rem;
+  color: #cccccc;
 }
 
 .breadcrumbs a {
@@ -774,6 +793,8 @@ input[type='radio'] {
 
   nav {
     position: static;
+    width: auto;
+    inset: auto;
   }
 
   nav ul {
