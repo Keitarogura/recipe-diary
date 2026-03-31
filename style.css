@@ -605,16 +605,40 @@ form {
   gap: 1.5rem;
 }
 
-.form-item {
+/* .form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+} */
+
+.wpcf7-form-control-wrap{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.form-item:has([required]) label::after {
+.form-required {
   content: '(必須)';
   font-size: 0.75em;
   margin-inline-start: 0.25em;
+}
+
+.wpcf7-submit {
+  margin-left: 10px;
+  display: inline-block;
+  border: 1px solid currentColor;
+  color: #000000;
+  padding-block: 1.125rem;
+  padding-inline: 3.75rem;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.wpcf7-submit:hover {
+  color: #ffffff;
+  border-color: #f3775f;
+  background-color: #f3775f;
 }
 
 input[type='text'],

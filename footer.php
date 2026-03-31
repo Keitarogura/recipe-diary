@@ -1,7 +1,7 @@
   <footer>
     <ul class="footer-nav">
-      <li><a href="<?php echo esc_url(home_url('/')); ?>contact/">お問い合わせ</a></li>
-      <li><a href="<?php echo esc_url(home_url('/')); ?>privacy-policy/">プライバシーポリシー</a></li>
+      <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
+      <li><a href="<?php echo esc_url(home_url('/privacy-policy/')); ?>">プライバシーポリシー</a></li>
     </ul>
     <ul class="sns">
       <li><a href="#">Instagram</a></li>
